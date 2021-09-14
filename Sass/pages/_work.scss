@@ -1,121 +1,73 @@
-* {
-    border: 0px solid red;
-}
 
-
-.pn-no {
-    padding: 0;
-}
-
-.mr-no {
-    margin: 0;
-}
-
-.mt-no {
-    margin-top: 0;
-}
-
-.mb-no {
-    margin-bottom: 0;
-}
-
-.ml-no {
-    margin-left: 0;
-}
-
-.mr-no {
-    margin-right: 0;
-}
-
-// .work-item-title, .work-item-description {
-//     font-family: 'Poppins', sans-serif;
-//     text-align: center;
-//     color: #fff;
+// .pn-no {
+//     padding: 0;
 // }
 
-// .work-item-title {
-//     font-size: 60px;
+// .mr-no {
+//     margin: 0;
 // }
 
-// .work-item-description  {
-//     text-align: center;
-//     font-size: 24px;
-//     max-width: 600px;
-//     margin: 0 auto 36px;
-//     color: #777;
-//     line-height: 45px;
+// .mt-no {
+//     margin-top: 0;
 // }
 
-h1 {
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    margin: 0;
-}
+// .mb-no {
+//     margin-bottom: 0;
+// }
 
-p{
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 2px;
-    color: #fff;
-    padding: 0;
-    margin: 0;
-}
+// .ml-no {
+//     margin-left: 0;
+// }
 
-a {
-    font-family: 'Poppins', sans-serif;
-}
+// .mr-no {
+//     margin-right: 0;
+// }
 
-img {
-    width: 100%;
-}
-
-.container {
-    margin: 50px auto 0px;
-    height: 100%;
-    padding: 0;
-}
+// img {
+//     width: 100%;
+// }
 
 .container-fluid {
     margin-top: 60px;
     height: 100%;
 }
 
-.title-container {
-    padding-top: 30px;
-    justify-content: space-between;
-}
+// .card {
+//     margin: 35px 35px 0 35px;
+//     border: none;
+//     background: #1F1D2B;
 
-.card {
-    margin: 35px 35px 0 35px;
-    border: none;
-    background: #1F1D2B;
+//     .card-header, .card-body {
+//         border: 1px solid rgba(211, 211, 211, 0.616);
+//     }
 
-    .card-header, .card-body {
-        border: 1px solid rgba(211, 211, 211, 0.616);
-    }
-
-    .card-inner:hover {
-        .card-header, .card-body {
-            border: 1px solid #fff;
-        }
-    }
-}
+//     .card-inner:hover {
+//         .card-header, .card-body {
+//             border: 1px solid #fff;
+//         }
+//     }
+// }
 
 .lazy {
     width: 55px;
 }
 
 
-section {
+.section-work {
     height: 100%;
     // background: #15161e;
 
-    .inner {
+    &__inner {
         width: 100%;
         height: 100%;
-        margin-top: 50px;
+    }
 
-        .title-container {
-            height: 160px;
+    &__title-container {
+        justify-content: space-between;
+        padding-top: 0;
+        margin: 0;
+        height: 100%;
+        // height: 160px;
 
             .line {
                 width: 100px;
@@ -124,87 +76,108 @@ section {
             }
 
             h1 {
+                text-align: center;
                 color: #fff;
                 padding: 0;
                 margin: 0;
             }
 
             p{
+                text-align: center;
+                letter-spacing: 2px;
+                color: #fff;
                 padding: 0;
                 margin: 0;
             }
-        }
+    }
 
-        .card {
-            width: 400px;
-            height: 355px;
-            padding: 15px;
-            margin-bottom: 50px;
+    &__card {
+        background: #1F1D2B;
+        border: none;
+        width: 400px;
+        height: 455px;
+        padding: 15px;
+        margin: 35px 35px 50px 35px;
+    }
 
-            .card-inner {
-                text-decoration: none;
-                width: 100%;
-                height: 100%;
+    &__card-inner {
+        transition: 0.3s;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
 
-                .card-header {
-                    border-bottom: 0px;
-                    border-radius: 0px !important;
-                    width: 100%;
-                    height: 3px;
-                    padding-left: 10px;
+    &__card-inner:hover {
+        text-decoration: none;
 
-                    span {
-                        margin: 2px;
-                        width: 4px;
-                        height: 4px;
-                        border-radius: 50%;
-                        background: #fff;
-                    }
-                }
-
-                .card-body {
-                    width: 100%;
-                    height: 100%;
-                    padding: 15px;
-
-                    span {
-                        width: 100%;
-                        height: 100%;
-                        background: url('/img/front.png');
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                    }
-                }
-
-                .card-title {
-                    width: 100%;
-                    height: auto;
-                    padding: 25px;
-                }
-            }
-        }
-
-        button {
-            cursor: pointer;
-            font-family: 'Poppins', sans-serif;
-            width: 100px;
-            padding: 15px;
-            margin: 35px 0;
-            color: #fff;
-            background-color: #1F1D2B;
-            border: 1px solid rgba(211, 211, 211, 0.616);
-
-            #showMore {
-                span {
-                    color: #fff;
-                }
-            }
-        }
-
-        button:hover {
+        .section-work__card-header, .section-work__card-body {
+            transition: 0.3s;
             border: 1px solid #fff;
+        }
+
+        .section-work__card-header{
+            border-bottom: 0px;
         }
     }
 
+    &__card-header {
+        border: 1px solid rgba(211, 211, 211, 0.616);
+        border-bottom: 0px;
+        border-radius: 0px;
+        width: 100%;
+        height: 30px;
+        padding-left: 10px;
+
+        span {
+            margin: 2px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #fff;
+        }
+    }
+
+    &__card-body {
+        border: 1px solid rgba(211, 211, 211, 0.616);
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+
+        span {
+            width: 100%;
+            height: 100%;
+            background: url('/img/front.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__card-title {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+
+    &__button {
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        width: 100px;
+        padding: 15px;
+        margin: 35px 0;
+        color: #fff;
+        background-color: #1F1D2B;
+        border: 1px solid rgba(211, 211, 211, 0.616);
+
+        #showMore {
+            span {
+                color: #fff;
+            }
+        }
+    }
+
+    &__button:hover {
+        border: 1px solid #fff;
+    }
 }

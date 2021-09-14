@@ -6,18 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/text-animation.css">
-    <link rel="stylesheet" href="css/cursor.css">
-    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="./css/main.css">
     <!-- <link rel="icon" href="img/ico.png"> -->
     <!-- <link rel="shortcut icon" href="img/ico.png" type="image/x-icon"> -->
     <title>Mirjalol Mirkholikov</title>
-    <link rel="icon" href="img/ico.png">
+    <link rel="icon" href="./img/ico.png">
 </head>
     <body>
+
         <div class="preloader" id="preloader">
             <div class="preload">
                 <div class="box-wrap">
@@ -33,7 +29,7 @@
 
         <header>
             <nav class="navbar navbar-expand-custom navbar-mainbg">
-                <a class="navbar-brand navbar-logo logo" href="index.html">
+                <a class="navbar-brand navbar-logo logo" href="/index.html">
                     <svg style="transform: rotate(182deg);" class="w-100 h-100" width="35px" height="35px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="logo-svg-p" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="logo-svg-inner" transform="translate(-1355.000000, -132.000000)" fill-rule="nonzero" fill="#EA7C69" style="fill: #EA7C69">
@@ -53,43 +49,41 @@
                             <a class="nav-link" href="javascript:void(0);">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="work.html">Work</a>
+                            <a class="nav-link" href="/work.html">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="/about.html">About</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li> -->
                     </ul>
                 </div>
             </nav>
         </header>
         
-        <section>
+        <section class="section-home">
 
             <div class="wrapper">
-                <h1 class="typing-demo">Hi, I’m Mirjalol</h1>
-            </div>
-            <p>I creat modern and responsive websites.</p>
-            <div class="mirjalol">
-                <!-- <img src="./img/person-bg.svg" alt="creator"> -->
+                <h1 class="section-home__typing typing-demo">Hi, I’m Mirjalol</h1>
             </div>
 
-            <span class="laptop">
-                <img src="img/laptop.png" alt="">
-            </span>
-            <span class="headphones">
-                <img src="img/headphones.png" alt="">
+            <p class="section-home__title">I creat modern and responsive websites.</p>
+
+            <div class="section-home__mirjalol"></div>
+
+            <span class="section-home__laptop">
+                <img src="img/laptop.png" alt="laptop">
             </span>
 
-            <span class="mouse-one" id="mouse-one">
+            <span class="section-home__headphones">
+                <img src="img/headphones.png" alt="headphones">
+            </span>
+
+            <span class="section-home__mouse-one" id="mouse-one">
                 <svg id="fakeMouseCursor" width="65" height="65" viewBox="0 0 10 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id="fakeMouseCursorArrow" d="M8.73482 11.1848C8.33635 9.69768 9.69717 8.33685 11.1843 8.73533L22.1039 11.6612C24.0377 12.1794 24.095 14.9024 22.1847 15.5015L18.0937 16.7843C17.469 16.9802 16.9797 17.4695 16.7838 18.0942L15.5009 22.1852C14.9019 24.0955 12.1789 24.0382 11.6607 22.1044L8.73482 11.1848Z" fill="#F7A538" data-svg-origin="8.66455078125 8.665057182312012"></path>
                 </svg>
             </span>
 
-            <span class="mouse-two" id="mouse-two">
+            <span class="section-home__mouse-two" id="mouse-two">
                 <svg id="fakeMouseCursor" width="65" height="65" viewBox="0 0 10 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id="fakeMouseCursorArrow" d="M8.73482 11.1848C8.33635 9.69768 9.69717 8.33685 11.1843 8.73533L22.1039 11.6612C24.0377 12.1794 24.095 14.9024 22.1847 15.5015L18.0937 16.7843C17.469 16.9802 16.9797 17.4695 16.7838 18.0942L15.5009 22.1852C14.9019 24.0955 12.1789 24.0382 11.6607 22.1044L8.73482 11.1848Z" fill="#F7A538" data-svg-origin="8.66455078125 8.665057182312012"></path>
                 </svg>
@@ -110,6 +104,3 @@
 
     </body>
 </html>
-
-
-<!-- <svg class="canvas" viewBox="0 0 1920 1080" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><rect width="1920" height="1080" fill="hsl(233, 65%, 15%)"></rect><defs><linearGradient x1="0.5" y1="0" x2="0" y2="1" id="SvgjsLinearGradient1119"><stop stop-color="#58288a" offset="0"></stop><stop stop-color="#14060d" offset="0.1"></stop></linearGradient><linearGradient x1="0.5" y1="0" x2="0" y2="1" id="SvgjsLinearGradient1120"><stop stop-color="#28348a" offset="0"></stop><stop stop-color="#120614" offset="0.22857142857142856"></stop></linearGradient><linearGradient x1="0.5" y1="0" x2="0" y2="1" id="SvgjsLinearGradient1121"><stop stop-color="#44288a" offset="0"></stop><stop stop-color="#140610" offset="0.3571428571428571"></stop></linearGradient><linearGradient x1="0.5" y1="0" x2="0" y2="1" id="SvgjsLinearGradient1122"><stop stop-color="#cec0f2" offset="0"></stop><stop stop-color="#d742ad" offset="0.48571428571428565"></stop></linearGradient><linearGradient x1="0.5" y1="0" x2="0" y2="1" id="SvgjsLinearGradient1123"><stop stop-color="#d8c0f2" offset="0"></stop><stop stop-color="#d7428f" offset="0.6142857142857142"></stop></linearGradient><linearGradient x1="0.5" y1="0" x2="0" y2="1" id="SvgjsLinearGradient1124"><stop stop-color="#cec0f2" offset="0"></stop><stop stop-color="#d742ad" offset="0.7428571428571429"></stop></linearGradient><linearGradient x1="0.5" y1="0" x2="0" y2="1" id="SvgjsLinearGradient1125"><stop stop-color="#e2c0f2" offset="0"></stop><stop stop-color="#d74271" offset="0.8714285714285713"></stop></linearGradient></defs><path d="M0,-516.1463256103937C52.968912780663096,-493.0092552669027,214.74463034089354,-410.54065509828877,317.8134766839786,-377.3239035494479C420.88232302706365,-344.107152000607,513.7988663582046,-346.51859849429474,618.4130780585103,-316.84581631734846C723.0272897588161,-287.1730341404022,841.1667955376439,-220.54911239422998,945.4987468858129,-199.28721048777015C1049.8306982339818,-178.02530858131033,1128.9758050589087,-201.21163236629138,1244.4047861475242,-189.27440487858954C1359.8337672361397,-177.3371773908877,1525.4734311087593,-163.1851921062583,1638.0726334175054,-127.663845561559C1750.6718357262514,-92.14249901685969,1873.0121055695843,-1.3992456022545383,1920,23.853674389606354L 1920 1080 L 0 1080 Z" fill="url(#SvgjsLinearGradient1119)"></path><path d="M0,-379.48424737386307C63.57439269856616,-362.6311640405267,251.43385665991792,-309.4591505911826,381.44635619139694,-278.3657473738447C511.45885572287597,-247.27234415650685,649.0863322901688,-231.27534705504488,780.0749971888741,-192.92382806983574C911.0636620875795,-154.5723090846266,1035.9613375986225,-92.70775577630219,1167.3783455836287,-48.25663346258994C1298.795353568635,-3.8055111488776845,1443.140102696182,36.606555750030886,1568.5770450989107,73.78290581243775C1694.0139875016393,110.95925587484462,1861.429507516485,157.965040061949,1920,174.80146691185124L 1920 1080 L 0 1080 Z" fill="url(#SvgjsLinearGradient1120)"></path><path d="M0,-279.0708776383246C69.72435646803824,-255.5820407381048,295.80168184920603,-181.08357714597375,418.3461388082294,-138.137856237006C540.8905957672528,-95.19213532803823,610.0227847783578,-48.34815696307774,735.2667417541402,-21.396552184517986C860.5106987299225,5.5550525940417685,1030.9891820859004,-14.443858564341895,1169.8098806629232,23.571772434352532C1308.630579239946,61.58740343304696,1443.1592466600978,162.3757707245233,1568.1909332162772,206.69723380764856C1693.2226197724567,251.0186968907738,1861.3651555360461,275.6999980788614,1920,289.500550933104L 1920 1080 L 0 1080 Z" fill="url(#SvgjsLinearGradient1121)"></path><path d="M0,-153.96608415186984C57.508526917848826,-143.42755327177562,245.7836596830092,-125.03669400031075,345.05116150709296,-90.7348988713045C444.3186633311767,-56.433103742298236,497.06900126760405,20.628269992738666,595.6050109445026,51.8446866221677C694.1410206214011,83.06110325159673,824.8819087444657,63.34010453486165,936.2672195684843,96.56360090526971C1047.6525303925027,129.78709727567775,1150.6953666246804,217.89504113428853,1263.916875888614,251.18566484461604C1377.1383851525475,284.47628855494355,1506.2490878001881,266.689777523792,1615.5962751520858,296.3073431672348C1724.9434625039835,325.92490881067766,1869.266045858681,406.7937727822667,1920,428.89105870527305L 1920 1080 L 0 1080 Z" fill="url(#SvgjsLinearGradient1122)"></path><path d="M0,-63.38778828157843C43.85917038157775,-49.31451246997197,175.0708819930365,3.4811635517017656,263.1550222894665,21.051866588060328C351.2391625858965,38.62256962441889,445.8734746424648,16.20900907976447,528.5048417785799,42.03642993657293C611.136208914695,67.86385079338139,682.4932934860697,145.66212906177012,758.943225106157,176.0163917289111C835.3931567262443,206.37065439605206,912.2080133002404,206.12071769188412,987.204431499104,224.16200593941883C1062.2008496979674,242.20329418695354,1141.4996526109626,265.71006900900994,1208.9217342993384,284.2641212141194C1276.3438159877142,302.8181734192289,1317.2740649321606,299.05384922513946,1391.7369216293582,335.4863191700759C1466.1997783265558,371.9187891150123,1567.6550280874173,469.81414926853745,1655.6988744825244,502.85894088373794C1743.7427208776314,535.9037324989384,1875.949812413754,528.6057141983554,1920,533.7550688612788L 1920 1080 L 0 1080 Z" fill="url(#SvgjsLinearGradient1123)"></path><path d="M0,86.94103358207235C45.1450589536594,99.02014650229988,181.86764700715457,132.1540483803317,270.8703537219564,159.41571110343756C359.87306043675824,186.67737382654343,447.4475151019201,219.13164318769125,534.0162402888109,250.51100992070766C620.5849654757017,281.89037665372405,691.4817650668249,316.8750482309407,790.2827048433012,347.691911501536C889.0836446197775,378.50877477213135,1026.4519922635743,409.2847916531607,1126.8218789476687,435.4121895442795C1227.191765631763,461.5395874353983,1309.4165928609887,474.6988584564843,1392.5020249478669,504.4562988482489C1475.587457034745,534.2137392400134,1537.418142293583,581.6379475344678,1625.3344714689385,613.9568318948669C1713.250800644294,646.275716255266,1870.8890785781564,684.3008094913476,1920,698.3696050106438L 1920 1080 L 0 1080 Z" fill="url(#SvgjsLinearGradient1124)"></path><path d="M0,191.1340032838952C40.69058450839393,204.8803456142929,156.99172931617835,240.6493091690612,244.14350705036358,273.61205726628145C331.2952847845488,306.5748053635017,428.5786530697529,359.5992810099591,522.9106664051113,388.9104918672166C617.2426797404697,418.2217027244741,718.0757885102834,419.23352485028175,810.1355870625142,449.47932240982647C902.1953856147451,479.7251199693712,980.9198631110105,543.7412705305501,1075.2694577184966,570.3852772244849C1169.6190523259827,597.0292839184197,1278.538972617237,583.6409140977374,1376.2331547074307,609.343362573435C1473.9273367976243,635.0458110491326,1570.8067427108977,690.0158136745459,1661.434550259659,724.5999680786703C1752.0623578084205,759.1841224827946,1876.9057583766098,801.4735688449292,1920,816.848288998181L 1920 1080 L 0 1080 Z" fill="url(#SvgjsLinearGradient1125)"></path></svg> -->
