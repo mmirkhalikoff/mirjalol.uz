@@ -13,20 +13,25 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 section {
-    background: #1F1D2B;
+    background: #1F1D2B !important;
     // height: 100vh !important;
 }
 
 h1 {
     font-size: 68px !important;
+    font-family: 'Poppins', 'Arial' , sans-serif !important;
+    color: #fff;
 }
 
 p {
     font-size: 28px !important;
+    font-family: 'Poppins', 'Arial' , sans-serif !important;
+    letter-spacing: 1.5px;
+    color: #fff;
 }
 
 

@@ -28,25 +28,10 @@
 // }
 
 .container-fluid {
-    margin-top: 60px;
     height: 100%;
 }
 
-// .card {
-//     margin: 35px 35px 0 35px;
-//     border: none;
-//     background: #1F1D2B;
 
-//     .card-header, .card-body {
-//         border: 1px solid rgba(211, 211, 211, 0.616);
-//     }
-
-//     .card-inner:hover {
-//         .card-header, .card-body {
-//             border: 1px solid #fff;
-//         }
-//     }
-// }
 
 .lazy {
     width: 55px;
@@ -60,6 +45,7 @@
     &__inner {
         width: 100%;
         height: 100%;
+        margin-top: 150px;
     }
 
     &__title-container {
@@ -95,7 +81,7 @@
         background: #1F1D2B;
         border: none;
         width: 400px;
-        height: 455px;
+        height: 365px;
         padding: 15px;
         margin: 35px 35px 50px 35px;
     }
@@ -154,6 +140,7 @@
     }
 
     &__card-title {
+        font-size: 18px !important;
         text-align: center;
         width: 100%;
         height: auto;
