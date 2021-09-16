@@ -9,6 +9,8 @@
 }
 
 html {
+    position: relative; 
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
