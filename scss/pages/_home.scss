@@ -8,7 +8,7 @@
         justify-content: flex-start;
         background: #1F1D2B;
         flex-direction: column;
-        padding-top: 100px;
+        padding-top: 75px;
 
 
     &__typing {
@@ -26,12 +26,17 @@
     }
 
     &__mirjalol {
-        background: url('../img/person-bg.svg');
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 550px;
-        height: 450px;
+        // background: url('/img/person-bg.svg');
+        // background-position: bottom;
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        width: 35%;
+        height: 35%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__laptop, &__headphones,
