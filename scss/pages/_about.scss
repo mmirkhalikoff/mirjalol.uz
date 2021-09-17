@@ -47,12 +47,12 @@ a, li {
             a {
                 transition: 0.5s;
                 text-decoration: none;
-                color: #EA7C69;
+                color: rgb(255, 224, 179);
             }
         
             a:hover {
                 transition: 0.5s;
-                color: #EA7C69;
+                color: rgb(255, 224, 179);
                 opacity: .7;
             }
         }
@@ -61,13 +61,13 @@ a, li {
             justify-content: space-between;
             
             a {
-                background: #EA7C69;
+                background: rgb(255, 224, 179);
                 padding: 5px 10px;
                 font-size: 18px;
                 letter-spacing: 1px;
                 border-radius: 8px;
                 list-style: none;
-                color: #fff;
+                color: #1F1D2B;
                 transition: 0.5s;
             }
         
@@ -75,7 +75,24 @@ a, li {
                 transition: 0.5s;
                 opacity: .7;
                 text-decoration: none;
-                color: #fff;
+                color: #1F1D2B;
+            }
+        }
+    }
+
+    &__img {
+
+        img {
+            width: 400px;
+            height: 400px;
+            animation: about 2s infinite alternate;
+        }
+        
+
+        @keyframes about {
+            0% {
+                margin-top: 20px;
+                margin-bottom: -10px;
             }
         }
     }

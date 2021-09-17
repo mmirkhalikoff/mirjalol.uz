@@ -4,157 +4,199 @@
 
 .section-home {
         display: flex;
-        align-items: center;
         justify-content: flex-start;
         background: #1F1D2B;
         flex-direction: column;
-        padding-top: 75px;
+        // padding-top: 75px;
 
-
-    &__typing {
-        position: bottom;
-        text-align: center;
-        color: #fff;
-    }
-
-    &__title {
-        text-align: center;
-        letter-spacing: 2px;
-        position: bottom;
-        padding-top: 20px;
-        margin: 0;     
-    }
-
-    &__mirjalol {
-        // background: url('/img/person-bg.svg');
-        // background-position: bottom;
-        // background-repeat: no-repeat;
-        // background-size: contain;
-        width: 35%;
-        height: 35%;
-
-        img {
+        &__ico {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 60px;
+            height: 100vh;
             width: 100%;
+        }
+
+        &__person {
+            background-image: url('/img/ico-person/business-3d-new-flies-with-laptop-man-2.png');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: rotate(-15deg);
+            border-radius: 10% 50% 30% 50%;
+            animation: person 2s infinite alternate;
             height: 100%;
-        }
-    }
-
-    &__laptop, &__headphones,
-    &__mouse-one, &__mouse-two {
-        position: absolute;
-        width: 250px;
-
-        img {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-    }
-
-    &__laptop {
-        animation: laptop ease-in-out 3s;
-        left: 10%;
-        top: 50%;
-        cursor: pointer;
-        opacity: 100%;
-    }
-
-    @keyframes laptop {
-        0% {
-            left: 100%;
-            top: -100%;
-            display: none;
+            width: 45%;
         }
 
-        100% {
-            left: 10%;
-            top: 50%;
-            display: block;
-            opacity: 70%;
-        }
-    }
-
-    &__headphones {
-        animation: headphones ease-in-out 11s;
-        right: 10%;
-        top: 40%;
-    }
-
-    @keyframes headphones {
-        0% {
-            right: 100%;
-            top: -100%;
-            display: none;
+        @keyframes person {
+            0% {
+                margin-top: 60px;
+                margin-bottom: -10px;
+            }
         }
 
-        100% {
-            right: 10%;
-            top: 40%;
-            display: block;
-            opacity: 70%;
-        }
-    }
+        &__title {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 50%;
+            // text-align: center;
+            letter-spacing: 2px;
+            position: bottom;
+            padding-top: 20px;
+            height: 80%;
+            margin: 0;   
+            
+            span {
+                color: rgb(255, 224, 179);
+            }
 
-    &__mouse-one {
-        animation: mouse-one ease-in-out 6s;
-        left: 20%;
-        top: -20%;
-    }
-
-    @keyframes mouse-one {
-        0% {
-            left: 110%;
-            top: -100%;
-            display: none;
-        }
-
-        50% {
-            left: 20%;
-            top: 65%;
-            display: block;
+            button {
+                margin-right: 50px;
+                width: 250px;
+                height: 50px;
+            }
         }
 
-        100% {
-            left: 20%;
-            top: -20%;
-            display: none;
-        }
-    }
+        // &__typing {
+        //     position: bottom;
+        //     text-align: center;
+        //     color: #fff;
+        // }
 
-    &__mouse-two {
-        animation: mouse-two ease-in-out 30s;
-        right: 10%;
-        top: 70%;
-        transform: rotate(-45deg);
-    }
+        // &__mirjalol {
+        //     // background: url('/img/person-bg.svg');
+        //     // background-position: bottom;
+        //     // background-repeat: no-repeat;
+        //     // background-size: contain;
+        //     width: 35%;
+        //     height: 35%;
 
-    @keyframes mouse-two {
-        0% {
-            right: 100%;
-            top: -100%;
-            display: none;
-        }
+        //     img {
+        //         width: 100%;
+        //         height: 100%;
+        //     }
+        // }
 
-        37% {
-            right: 4%;
-            top: 55%;
-            display: block;
-            transform: rotate(-25deg);
-        }
+        // &__laptop, &__headphones,
+        // &__mouse-one, &__mouse-two {
+        //     position: absolute;
+        //     width: 250px;
 
-        70% {
-            right: 70%;
-            top: 45%;
-            transform: rotate(95deg);
-        }
+        //     img {
+        //         margin: 0;
+        //         padding: 0;
+        //         width: 100%;
+        //     }
+        // }
+
+        // &__laptop {
+        //     animation: laptop ease-in-out 3s;
+        //     left: 10%;
+        //     top: 50%;
+        //     cursor: pointer;
+        //     opacity: 100%;
+        // }
+
+        // @keyframes laptop {
+        //     0% {
+        //         left: 100%;
+        //         top: -100%;
+        //         display: none;
+        //     }
+
+        //     100% {
+        //         left: 10%;
+        //         top: 50%;
+        //         display: block;
+        //         opacity: 70%;
+        //     }
+        // }
+
+        // &__headphones {
+        //     animation: headphones ease-in-out 11s;
+        //     right: 10%;
+        //     top: 40%;
+        // }
+
+        // @keyframes headphones {
+        //     0% {
+        //         right: 100%;
+        //         top: -100%;
+        //         display: none;
+        //     }
+
+        //     100% {
+        //         right: 10%;
+        //         top: 40%;
+        //         display: block;
+        //         opacity: 70%;
+        //     }
+        // }
+
+        // &__mouse-one {
+        //     animation: mouse-one ease-in-out 6s;
+        //     left: 20%;
+        //     top: -20%;
+        // }
+
+        // @keyframes mouse-one {
+        //     0% {
+        //         left: 110%;
+        //         top: -100%;
+        //         display: none;
+        //     }
+
+        //     50% {
+        //         left: 20%;
+        //         top: 65%;
+        //         display: block;
+        //     }
+
+        //     100% {
+        //         left: 20%;
+        //         top: -20%;
+        //         display: none;
+        //     }
+        // }
+
+        // &__mouse-two {
+        //     animation: mouse-two ease-in-out 30s;
+        //     right: 10%;
+        //     top: 70%;
+        //     transform: rotate(-45deg);
+        // }
+
+        // @keyframes mouse-two {
+        //     0% {
+        //         right: 100%;
+        //         top: -100%;
+        //         display: none;
+        //     }
+
+        //     37% {
+        //         right: 4%;
+        //         top: 55%;
+        //         display: block;
+        //         transform: rotate(-25deg);
+        //     }
+
+        //     70% {
+        //         right: 70%;
+        //         top: 45%;
+        //         transform: rotate(95deg);
+        //     }
 
 
-        100% {
-            right: 10%;
-            top: 70%;
-            transform: rotate(-45deg);
-        }
-    }
+        //     100% {
+        //         right: 10%;
+        //         top: 70%;
+        //         transform: rotate(-45deg);
+        //     }
+        // }
 
 }
 
