@@ -26,6 +26,7 @@ a, li {
     
     &__box1 {
         width: 55%;
+        margin-bottom: 100px;
     
         div {
             margin: 25px 0;
@@ -91,8 +92,8 @@ a, li {
 
         @keyframes about {
             0% {
-                margin-top: 20px;
-                margin-bottom: -10px;
+                padding-top: 10px;
+                margin-bottom: 0px;
             }
         }
     }
